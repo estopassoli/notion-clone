@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: none;
+}
+
+main {
+    overflow-x: none;
+    width: 98vw;
+    height: 100vh;
+}
+
+#content {
+    overflow-x: none;
+    width: 35%;
+    height: max-content;
+    margin: 0 auto;
+    background-color: #c1c1c1;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+#content-header {
+    border-bottom: 1px solid rgb(206, 206, 206);
+    overflow-x: none;
+    display: flex;
+    z-index: 99;
+    height: max-content;
+    width: 35%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #b1b1b1;
+}
+
+#content-header-title {
+    overflow-x: none;
+    margin: 0 auto;
+}
+
+#row-list {
+    margin-top: 10px;
+    overflow-x: none;
+    width: 100%;
+    height: max-content;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 #fff;
+    transition: all .5s;
+    border: none;
+}
+
+#note-title {
+    width: 75%;
+    display: flex;
+    font-weight: bold;
+    font-size: 18px;
+    overflow-x: none;
+    margin-bottom: 5px;
+}
+
+
+#options {
+    display: flex;
+    position: relative;
+    top: -30px;
+    float: right;
+
+}
+
+#options i {
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all .2s;
+}
+
+#options i:hover {
+    transform: scale(115%);
+}
+
+#row-type {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+#note-desc {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.61);
+    overflow-x: none;
+    text-transform: none;
+    margin-bottom: 5px;
+}
+
+#note-date {
+    position: relative;
+    font-size: 12px;
+    float: right;
+    color: rgba(0, 0, 0, 0.356);
+    overflow-x: none;
+    bottom: -30px;
+}
+
+#row-content {
+    display: block;
+    overflow-x: none;
+    padding: 10px;
+
+}
+
+/* #row-list:hover {
+    box-shadow: 0 0 5px 0 rgba(192, 252, 102, 0.363);
+    overflow-x: none;
+    transform: scale(101%);
+} */
+
+#insert-note {
+    width: 350px;
+    height: max-content;
+    border-radius: 5px;
+    margin: 30px;
+    overflow-x: none;
+    padding: 100px auto;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(189, 189, 189);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.411);
+}
+
+#insert-note form {
+    display: block;
+    overflow-x: none;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+#insert-note form h3 {
+    overflow-x: none;
+    text-align: center;
+}
+
+
+
+
+
+label {
+    font-size: 12px;
+    overflow-x: none;
+    font-weight: bolder;
+    text-align: left;
+    align-items: left;
+}
+
+input[name=input-title] {
+    color: #000;
+    font-weight: bold;
+    width: 70%;
+    height: 40px;
+    overflow-x: none;
+    padding-left: 10px;
+    border-style: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#note-description {
+    color: #000;
+    font-weight: bold;
+    width: 96%;
+    height: 40px;
+    overflow-x: none;
+    padding-left: 10px;
+    border-style: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+#note-type {
+    color: #000;
+    font-weight: bold;
+    width: 96%;
+    height: 40px;
+    overflow-x: none;
+    padding-left: 10px;
+    border-style: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input[type=color] {
+    position: absolute;
+    -webkit-appearance: none;
+    overflow-x: none;
+    margin-left: 10px;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+input[type=color]:hover {
+    overflow-x: none;
+    border: 2px solid rgb(255, 255, 255);
+    transform: scale(112%);
+}
+
+input[type=color]::-webkit-color-swatch {
+    border: none;
+    overflow-x: none;
+    border-radius: 50%;
+    padding: 0;
+}
+
+input[type=color]::-webkit-color-swatch-wrapper {
+    border: none;
+    overflow-x: none;
+    border-radius: 50%;
+    padding: 0;
+}
+
+select {
+    width: 100%;
+    height: 40px;
+    overflow-x: none;
+    padding-left: 10px;
+    border-style: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+option {
+    overflow-x: none;
+    font-weight: bold;
+    color: #000;
+}
+
+button[type=submit] {
+    float: left;
+    position: relative;
+    overflow-x: none;
+    padding: 7px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all .3s;
+
+}
+
+button[type=reset] {
+    position: relative;
+    overflow-x: none;
+    float: right;
+    padding: 7px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all .3s;
+
+}
+
+button[type=submit]:hover {
+    overflow-x: none;
+    color: #fff;
+    background-color: rgb(5, 158, 0);
+}
+
+button[type=reset]:hover {
+    overflow-x: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(243, 31, 31, 0.719);
+}
+
+input[type=datetime-local] {
+    width: 96%;
+    height: 40px;
+    overflow-x: none;
+    padding-left: 10px;
+    border-style: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button:focus,
+select:focus,
+option:focus,
+datetime-local:focus,
+textarea:focus,
+input:focus {
+    box-shadow: 0 0 0 0;
+    overflow-x: none;
+    outline: 0;
+}
